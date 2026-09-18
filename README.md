@@ -1,4 +1,36 @@
-# TopoFlow
+<img width="64" height="64" alt="logo" src="https://github.com/user-attachments/assets/2637d98e-afde-409b-9df9-da65f161b3e6" />![Upl<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- TopoFlow - "No em alarme": dois equipamentos convergem para um terceiro, e o terceiro acendeu.
+       Cores fixas de proposito: o Grafana carrega o logo via <img>, entao o SVG nao herda o tema.
+       As capsulas de icone sao vazadas por mascara, para mostrar o fundo em qualquer tema. -->
+  <defs>
+    <linearGradient id="tf-alarm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFB13D"/>
+      <stop offset="1" stop-color="#FF7B2E"/>
+    </linearGradient>
+    <mask id="tf-cap" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+      <rect width="64" height="64" fill="#000"/>
+      <rect x="4" y="8" width="22" height="13" rx="4" fill="#fff"/>
+      <rect x="38" y="8" width="22" height="13" rx="4" fill="#fff"/>
+      <rect x="21" y="43" width="22" height="13" rx="4" fill="#fff"/>
+      <rect x="7" y="11" width="7" height="7" rx="2.2" fill="#000"/>
+      <rect x="41" y="11" width="7" height="7" rx="2.2" fill="#000"/>
+      <rect x="24" y="46" width="7" height="7" rx="2.2" fill="#000"/>
+    </mask>
+  </defs>
+  <g fill="none" stroke="#3D71D9" stroke-width="3.2" stroke-linecap="round">
+    <path d="M15 21 V28 Q15 32 19 32 H32"/>
+    <path d="M49 21 V28 Q49 32 45 32 H32"/>
+    <path d="M32 32 V43"/>
+  </g>
+  <g mask="url(#tf-cap)">
+    <rect x="4" y="8" width="22" height="13" rx="4" fill="#3D71D9"/>
+    <rect x="38" y="8" width="22" height="13" rx="4" fill="#3D71D9"/>
+    <rect x="21" y="43" width="22" height="13" rx="4" fill="url(#tf-alarm)"/>
+  </g>
+</svg>
+oading logo.svg…]()
+      
+ # TopoFlow
 
 Plugin de painel do Grafana que desenha mapas de topologia editáveis dentro do próprio dashboard.
 
