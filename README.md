@@ -13,8 +13,8 @@ Você desenha a rede no canvas, vincula cada elemento a uma métrica ou a uma tr
 | | |
 |---|---|
 | **Tipo** | Panel plugin |
-| **ID** | `jlcp-topoflow-panel` |
-| **Versão atual** | 1.3.0 |
+| **ID** | `mdomingos-topoflow-panel` |
+| **Versão atual** | 1.4.1 |
 | **Requer** | Grafana 12.3.0 ou superior |
 | **Assinatura** | não assinado (precisa de liberação no `.ini`) |
 
@@ -53,9 +53,9 @@ Envie o arquivo para qualquer pasta temporária do servidor, por exemplo `/tmp`.
 
 ```bash
 cd /var/lib/grafana/plugins
-sudo mv /tmp/jlcp-topoflow-panel-1.3.0.zip /var/lib/grafana/plugins/
-sudo unzip jlcp-topoflow-panel-1.3.0.zip -d /var/lib/grafana/plugins/
-sudo chown -R grafana:grafana /var/lib/grafana/plugins/jlcp-topoflow-panel
+sudo mv /tmp/mdomingos-topoflow-panel-1.4.1.zip /var/lib/grafana/plugins/
+sudo unzip mdomingos-topoflow-panel-1.4.1.zip -d /var/lib/grafana/plugins/
+sudo chown -R grafana:grafana /var/lib/grafana/plugins/mdomingos-topoflow-panel
 ```
 
 O zip já traz a pasta `jlcp-topoflow-panel/` dentro dele, então o resultado tem que ser `/var/lib/grafana/plugins/jlcp-topoflow-panel/module.js`. Se os arquivos ficarem soltos direto em `plugins/`, o Grafana não acha o plugin.
@@ -66,7 +66,7 @@ Em `/etc/grafana/grafana.ini`, libere o plugin (ele não é assinado):
 
 ```ini
 [plugins]
-allow_loading_unsigned_plugins = jlcp-topoflow-panel
+allow_loading_unsigned_plugins = mdomingos-topoflow-panel
 ```
 
 Se a linha já existir com outros plugins, acrescente separando por vírgula. Nunca use curinga: isso desligaria a verificação de assinatura para tudo.
@@ -81,7 +81,7 @@ Obrigatório. O Grafana só lê o `plugin.json` na inicialização.
 
 ### 5. Conferir
 
-Vá em **Administration > Plugins**, filtre por *Panel* e procure "TopoFlow". Tem que aparecer com a versão 1.3.0 e um aviso de plugin sem assinatura, que é esperado.
+Vá em **Administration > Plugins**, filtre por *Panel* e procure "TopoFlow". Tem que aparecer com a versão 1.4.1 e um aviso de plugin sem assinatura, que é esperado.
 
 Se não aparecer:
 
@@ -98,4 +98,4 @@ sudo journalctl -u grafana-server -n 100 | grep -i plugin
 
 ---
 
-TopoFlow — v1.3.0
+TopoFlow — v1.4.1
