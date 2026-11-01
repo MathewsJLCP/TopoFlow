@@ -43,7 +43,7 @@ Você desenha a rede no canvas, vincula cada elemento a uma métrica ou a uma tr
 
 ## Deploy
 
-Procedimento completo. O arquivo é o `jlcp-topoflow-panel-1.3.0.zip`.
+Procedimento completo. O arquivo é o `mdomingos-topoflow-panel`.
 
 ### 1. Subir o zip por SFTP
 
