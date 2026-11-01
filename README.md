@@ -58,7 +58,7 @@ sudo unzip mdomingos-topoflow-panel-1.4.1.zip -d /var/lib/grafana/plugins/
 sudo chown -R grafana:grafana /var/lib/grafana/plugins/mdomingos-topoflow-panel
 ```
 
-O zip já traz a pasta `jlcp-topoflow-panel/` dentro dele, então o resultado tem que ser `/var/lib/grafana/plugins/jlcp-topoflow-panel/module.js`. Se os arquivos ficarem soltos direto em `plugins/`, o Grafana não acha o plugin.
+O zip já traz a pasta `mdomingos-topoflow-panel/` dentro dele, então o resultado tem que ser `/var/lib/grafana/plugins/mdomingos-topoflow-panel/module.js`. Se os arquivos ficarem soltos direto em `plugins/`, o Grafana não acha o plugin.
 
 ### 3. Ajustar o `.ini`
 
